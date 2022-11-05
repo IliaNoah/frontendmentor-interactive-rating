@@ -1,0 +1,105 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Dark-Blue2: hsl(217, 18%, 14%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+body {
+    background: var(--Very-Dark-Blue);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background: var(--Dark-Blue2);
+    width: 380px;
+    min-height: 370px;
+    border-radius: 20px;
+    padding: 1.2rem 2rem;
+}
+
+.container .icon-section {
+    padding-block: 12px;
+}
+
+.container .icon-section img {
+    width: 1.5rem;
+    display: inline;
+}
+
+.container .icon-section span {
+    border-radius: 50%;
+    background: var(--Dark-Blue);
+    padding: 1.1rem;
+    width: 3.5rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.container .text-section h2 {
+    color: var(--White);
+    padding-block: .9rem;
+    font-size: 1.7rem;
+}
+
+.container .text-section p {
+    color: var(--Light-Grey);
+    font-weight: 700;
+}
+
+.container .buttons-section {
+    padding-block: 1.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .buttons-section .flex-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .buttons-section .flex-top button {
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+    background: var(--Dark-Blue);
+    border: none;
+    color: var(--Medium-Grey);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container .buttons-section .flex-top button:focus {
+    background: var(--Light-Grey);
+    color: var(--White);
+}
+
+.container .buttons-section .flex-bot input {
+    width: 100%;
+    height: 3rem;
+    margin-top: 1.5rem;
+    background: var(--Orange);
+    color: var(--White);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.container .buttons-section .flex-bot input:hover, .container .buttons-section .flex-top button:hover{
+    background: var(--White);
+    color: var(--Orange);
+}
