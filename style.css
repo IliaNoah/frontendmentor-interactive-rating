@@ -172,7 +172,7 @@ button:focus {
 
 .button {
   width: 100%;
-  height: 3rem;
+  height: 2.6rem;
   margin-top: 1.5rem;
   background: var(--Orange);
   color: var(--White);

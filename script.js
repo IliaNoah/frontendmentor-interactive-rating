@@ -7,11 +7,15 @@ const message = document.querySelector(".message");
 
 let buttons = document.querySelectorAll(".buttons");
 
-for (let i = 0; i < buttons.length; i++) {
-  message.textContent = `Selected ${buttons[i].textContent} out of ${buttons[4].textContent}`;
-}
-
-submit.addEventListener("click", function () {
+function submitBtn() {
   messagePage.classList.remove("hidden");
   main.classList.add("hidden");
-});
+}
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    message.textContent = `You selected ${buttons[i].textContent} out of ${buttons.length} `;
+  });
+}
+
+submit.addEventListener("click", submitBtn);
