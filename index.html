@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <div class="icon-section">
-      <span>
-        <img src="images/icon-star.svg" alt="">
-      </span>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main container">
+      <div class="icon-section">
+        <span>
+          <img src="images/icon-star.svg" alt="" />
+        </span>
+      </div>
 
-    <div class="text-section">
-      <h1>How did we do?</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi quisquam inventore ipsam sapiente!</p>
-    </div>
+      <div class="text-section">
+        <h1>How did we do?</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          nisi quisquam inventore ipsam sapiente!
+        </p>
+      </div>
 
-    <div class="buttons-section">
+      <div class="buttons-section">
         <div class="flex-top">
           <button>1</button>
           <button>2</button>
@@ -31,10 +42,21 @@
           <button>4</button>
           <button>5</button>
         </div>
-      <div class="flex-bot">
-        <a class="button" href="pages/page2.html">Submit</a>
+        <div class="flex-bot">
+          <button class="button" href="pages/page2.html">Submit</button>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+    <div class="message-page container text-center flex-center hidden">
+      <img src="../images/illustration-thank-you.svg" alt="" />
+      <span class="message">Not finished yet</span>
+      <h1>Thank you!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+        animi saepe odio eveniet quibusdam, quos aut molestias illo deserunt
+        vero!
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

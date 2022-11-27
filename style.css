@@ -80,7 +80,7 @@ select {
   --White: hsl(0, 0%, 100%);
   --Light-Grey: hsl(217, 12%, 63%);
   --Medium-Grey: hsl(216, 12%, 54%);
-  --Dark-Grey: #262F38;
+  --Dark-Grey: #262f38;
   --Dark-Blue: hsl(213, 19%, 18%);
   --Dark-Blue2: hsl(217, 18%, 14%);
   --Very-Dark-Blue: hsl(216, 12%, 8%);
@@ -193,13 +193,13 @@ button:hover {
   color: var(--Orange);
 }
 
-.message{
+.message {
   text-align: center;
-  border-radius: 1000vmax ;
+  border-radius: 1000vmax;
   background: var(--Dark-Grey);
   color: var(--Orange);
   padding-inline: 1.2rem;
-  padding-block: .2rem;
+  padding-block: 0.2rem;
   margin: 2rem 0 1rem 0;
   font-size: 1rem;
 }
@@ -214,4 +214,8 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hidden {
+  display: none;
 }
